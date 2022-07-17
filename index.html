@@ -28,29 +28,34 @@
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
-                    <h2>a better way to camp</h2>
+                    <h3>a better way to camp</h3>
+                </div>
+                <div class="col col-md-4 col-xl-2">
+                    <a href="#reserveForm" class="btn btn-info btn-lg mt-4" role="button">Reserve Campsite</a>
                 </div>
             </div>
         </div>
-
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" />
+
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="nucampNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link" href="#">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">
                                 <i class="fa fa-home fa-lg"></i>Home</a></li>
-                        <li class=" nav-item"><a class="nav-link" href="aboutUs.html"><i
-                                    class="fa fa-info fa-lg"></i>About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>Sites</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactus.html"><i
-                                    class="fa fa-address-card fa-lg"></i>Contact</a>
+                        <li class="nav-item"><a class="nav-link" href="aboutUs.html">
+
+                                <i class="fa fa-info fa-lg"></i>About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">
+                                <i class="fa fa-list fa-lg"></i>Sites</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html">
+                                <i class="fa fa-address-card fa-lg"></i>Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -78,15 +83,21 @@
         <div class="row row-content align-items-center">
             <h2 class="text-sm-right">Featured Campsites</h2>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the
-                    pristine React
-                    Lake is
-                    a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of
+                            the
+                            pristine React
+                            Lake is
+                            a favorite for fly fishers.</p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake Thumbnail" />
+                </div>
             </div>
         </div>
 
-        <div class="container" <div class="" <div class="row row-content align-items-center">
+        <div class=" container" <div class="" <div class="row row-content align-items-center">
             <div class="row">
                 <h2 class="text-sm-right">Our Community Partners</h2>
 
@@ -97,7 +108,8 @@
                                 alt="Bootstrap Outfitters" />
                             <div class="media-body align-self-center">
                                 <h3>Bootstrap Outfitters</h3>
-                                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at
+                                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with
+                                    gear you need at
                                     prices you can't beat.</p>
                             </div>
                         </div>
@@ -123,6 +135,46 @@
             </div>
         </div>
     </div>
+
+    <div class="row row-content">
+        <div class="col col-sm-6 mx-auto">
+            <div class="card">
+                <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                </h3>
+                <div class="card-body">
+                    <form id="reserveForm">
+                        <div class="form-group">
+                            <div class="form-group-row"></div>
+                            <label for="Number of Campers" class="col-sm-6 col-form-label">Number of
+                                Campers</label>
+
+
+                            <select name="numcampers" id="numcampers" class="col-sm-6 col-form-label">
+                                <option value="select">Select...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group-row">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+
+                                <input type="date" class="form-control" id="date" name="lastName" placeholder="Date" />
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="site-footer">
         <div class="container">
